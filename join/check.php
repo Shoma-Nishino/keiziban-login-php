@@ -72,7 +72,7 @@ if(!empty($_POST)){
 		<?php endif; ?>
 		<?php if (!empty($error)): ?>
         		<p class="error">もう一度選択してください。</p>
-        <? endif; ?>
+        <?php endif; ?>
 		<dd>
 		</dd>
 	</dl>

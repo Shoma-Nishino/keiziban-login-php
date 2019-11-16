@@ -4,6 +4,7 @@ session_start();
 require('../dbconnect.php');
 
 if(!empty($_POST)){
+
 	if($_POST['name'] === ''){
 		$error['name'] = 'blank';
 	}
@@ -126,7 +127,7 @@ if(!empty($_POST)){
         	<input type="file" name="image" size="35" value="test"  />
         	<?php if (!empty($error)): ?>
         		<p class="error">もう一度選択してください。</p>
-        	<? endif; ?>
+        	<?php endif; ?>
         </dd>
 	</dl>
 	<div><input type="submit" value="入力内容を確認する" /></div>
